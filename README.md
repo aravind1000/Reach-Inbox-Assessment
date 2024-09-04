@@ -1,6 +1,6 @@
 # ReachInbox.ai Frontend Task
 
-This repository contains the implementation of the frontend task for the Associate - Frontend Engineer role at ReachInbox.ai. The project demonstrates my proficiency in ReactJS, Tailwind CSS, Axios, and API integration by implementing the required features as per the assignment instructions. This repository is currently under development.
+This repository contains the implementation of the frontend task for the Associate - Frontend Engineer role at ReachInbox.ai. The project demonstrates my proficiency in ReactJS, Tailwind CSS, Axios, and API integration by implementing the required features as per the assignment instructions.
 
 ## Table of Contents
 
@@ -21,19 +21,13 @@ This project focuses on creating a functional web app that demonstrates key func
 ## Screenshots
 
 ### Login-Page
-![Login_Page](public/login-page.png)
+![Login_Page](frontend/public/login-page.png)
 
 ### Signup-Page
-![Signup_Page](public/signup-page.png)
-
-### Google-Auth-Firebase-Page
-![Google_Auth_Firebase](public/google-auth-firebase.png)
+![Signup_Page](frontend/public/signup-page.png)
 
 ### Onebox-UI-Page
-![Onebox UI](public/onebox-ui.png)
-
-### Firebase-Logs-Page
-![Firebase-logs](public/firebase-logs.png)
+![Onebox UI](frontend/public/onebox-ui-page.png)
 
 ## Features
 
@@ -48,21 +42,26 @@ This project focuses on creating a functional web app that demonstrates key func
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/aravind1000/ReachInbox.ai-Assessment.git
+    git clone https://github.com/aravind1000/Reach-Inbox-Assessment.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd ReachInbox.ai-Assessment
+    cd Reach-Inbox-Assessment
     ```
 3. Install the necessary dependencies:
     ```bash
+    cd frontend
+    npm install
+
+    cd backend
     npm install
     ```
 4. Run the project locally:
     ```bash
-    npm start
+    npm start in frontend
+    node server.js in backend
     ```
-5. Open your browser and go to `http://localhost:3000`.
+5. Open your browser and go to `http://localhost:4000`.
 
 ## Usage
 
