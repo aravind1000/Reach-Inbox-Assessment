@@ -6,9 +6,20 @@ const app = express();
 const PORT = 5000;
 const cors = require('cors');
 
+app.get('/', (req, res) => {
+    res.send('Backend API is running...');
+});
+
 // Middleware
+app.use(cors(
+    {
+        origin: ["https://reach-inbox-frontend.onrender.com"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+));
 app.use(express.json());
-app.use(cors());
+
 
 // Route to fetch emails
 app.get('/api/emails', async (req, res) => {
