@@ -18,7 +18,7 @@ function ListOfMail() {
   const fetchEmails = async () => {
     setLoading(true);
     try {
-      const response = await axios.get('http://localhost:5000/api/emails');
+      const response = await axios.get('https://reach-inbox-api.vercel.app/api/emails');
       if (response.data && response.data.status === 200 && Array.isArray(response.data.data)) {
         setEmails(response.data.data);
       } else {
@@ -40,7 +40,7 @@ function ListOfMail() {
     if (!threadId) return;
 
     try {
-      await axios.post(`http://localhost:5000/api/emails/reply/${threadId}`, {
+      await axios.post(`https://reach-inbox-api.vercel.app/api/emails/reply/${threadId}`, {
         to: emails[selectedEmailIndex].fromEmail,
         subject: emails[selectedEmailIndex].subject,
         body: replyText,
@@ -57,7 +57,7 @@ function ListOfMail() {
 
   const handleDelete = async (threadId) => {
     try {
-      await axios.delete(`http://localhost:5000/api/emails/${threadId}`);
+      await axios.delete(`https://reach-inbox-api.vercel.app/emails/${threadId}`);
       setEmails(emails.filter((email) => email.threadId !== threadId));
       setIsDeleteModalOpen(true);
       setModalContent('Email deleted successfully!');
@@ -89,7 +89,7 @@ function ListOfMail() {
 
   const handleReset = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/emails/reset');
+      const response = await axios.get('https://reach-inbox-api.vercel.app/api/emails/reset');
       if (response.data && response.data.status === 200) {
         setModalContent('Inbox reset successfully!');
         setIsModalOpen(true);
