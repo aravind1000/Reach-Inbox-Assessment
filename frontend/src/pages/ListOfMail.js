@@ -57,7 +57,7 @@ function ListOfMail() {
 
   const handleDelete = async (threadId) => {
     try {
-      await axios.delete(`https://reach-inbox-api.vercel.app/emails/${threadId}`);
+      await axios.delete(`https://reach-inbox-api.vercel.app/api/emails/${threadId}`);
       setEmails(emails.filter((email) => email.threadId !== threadId));
       setIsDeleteModalOpen(true);
       setModalContent('Email deleted successfully!');
