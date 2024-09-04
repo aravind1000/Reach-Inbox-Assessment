@@ -16,7 +16,7 @@ This repository contains the implementation of the frontend task for the Associa
 
 ## Project Overview
 
-This project focuses on creating a functional web app that demonstrates key functionalities like login, data fetching, custom text editor, light and dark mode, and more.
+This project focuses on creating a functional web app that demonstrates key functionalities like login, data fetching, searching feature, custom text editor, light and dark mode, and more.
 
 ## Screenshots
 
