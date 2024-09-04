@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
 app.use(cors(
     {
         origin: ["https://reach-inbox-frontend.onrender.com"],
-        methods: ["POST", "GET"],
+        methods: ["POST", "GET","DELETE"],
         credentials: true
     }
 ));
