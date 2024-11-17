@@ -1,4 +1,4 @@
-# ReachInbox.ai Frontend Task
+# Mail Box
 
 This repository contains the implementation of the frontend task for the Associate - Frontend Engineer role at ReachInbox.ai. The project demonstrates my proficiency in ReactJS, Tailwind CSS, Axios, and API integration by implementing the required features as per the assignment instructions.
 
